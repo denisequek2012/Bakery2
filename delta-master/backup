@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Other Bakery</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet" type="text/css">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="styles/vendor.9c307a9d.css">
+  <link rel="stylesheet" href="styles/main.1c747b42.css">
+
+  <body ng-app="dateeasy2App" data-spy="scroll" ng-controller="MainCtrl" scroll-spy style="display: none">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+
+    <!-- ******HEADER****** -->
+    <header id="top" class="header navbar-fixed-top">
+      <div class="container">
+        <h1 class="logo pull-left">
+          <a class="scrollto" href="#promo">
+            <img id="logo-image" class="logo-image" src="images/logo/logo.a52e3854.png" alt="Logo">
+            <!--<span class="logo-title">Delta</span>-->
+          </a>
+        </h1>
+        <!--//logo-->
+        <div class="pull-right" ng-if="profile">
+          <div class="pull-left">
+            <img style="border-radius: 100px" src="//graph.facebook.com/{{profile.facebook.id}}/picture"> </div>
+          <div class="pull-right" style="margin: 5px 0px 0px 8px; height: 41px"> Welcome
+            <br>
+            <strong>{{profile.facebook.displayName}}</strong>
+          </div>
+        </div>
+        <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!--//nav-toggle-->
+          </div>
+          <!--//navbar-header-->
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+              <li ng-click="updateCount('about')" class="nav-item"><a class="scrollto" href="#about">ABOUT</a></li>
+              <li ng-click="updateCount('services')" class="nav-item"><a class="scrollto" href="#services">SERVICES</a></li>
+              <li ng-click="updateCount('products')" class="nav-item"><a class="scrollto" href="products">PRODUCTS</a></li>
+              <li ng-click="updateCount('contact')" class="nav-item last"><a class="scrollto" href="#contact">CONTACT</a></li>
+            </ul>
+            <!--//nav-->
+          </div>
+          <!--//navabr-collapse-->
+        </nav>
+        <!--//main-nav-->
+      </div>
+    </header>
+    <!--//header-->
+
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+      <div class="overlay"></div>
+      <div class="container">
+		<!--<a id="bgndVideo" class="player" data-property="{videoURL:'http://www.youtube.com/watch?v=APsDev5DbnE',containment:'#promo',autoPlay:true, mute:true, startAt:0, showYTLogo:false, showControls:false, opacity:1}">My video</a>-->
+        <div class="row">
+          <div class="overview col-md-12 col-sm-12 col-xs-12">
+  		<h2 class="title">Why must dating be such a pain? With DatEasy, it's just that easy.</h2>
+	            <ul class="summary">
+	              <li>Curated Personalised Date</li>
+	              <li>Saves You Precious Time</li>
+	              <li>Fresh new Itineraries</li>
+	            </ul>
+          </div>
+          <!--//overview-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//promo-->
+
+    <!-- ******ABOUT****** -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row">
+          <h2 class="title text-center sr-only">About</h2>
+          <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="icon" icons-animate> <i class="fa fa-venus-mars"></i> </div>
+            <!--//icon-->
+            <div class="content">
+              <h3 class="title">Personalized Dates</h3>
+              <p>Based on your preferences, Dateasy will curate itineraries tailored to your requests</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="icon" icons-animate> <i class="fa fa-rocket"></i> </div>
+            <!--//icon-->
+            <div class="content">
+              <h3 class="title">It's Fast</h3>
+              <p>Why spend hours searching for ideas when you can get tailored ideas in seconds?</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="icon" icons-animate> <i class="fa fa-users"></i> </div>
+            <!--//icon-->
+            <div class="content">
+              <h3 class="title">Business Partners</h3>
+              <p>With many renown business partners, look forward to discounts and promotions when you use Dateasy for your dates!</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="icon" icons-animate> <i class="fa fa-map-marker"></i> </div>
+            <!--//icon-->
+            <div class="content">
+              <h3 class="title">Fresh Itinerary</h3>
+              <p>Never get stucked with the same date ideas over and over again. Receive fresh new Ideas each time you use the app. It's Dateasy!</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+        </div>
+        <!--//row-->
+        <div class="row feature-row-last">
+          <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
+            <div class="icon" icons-animate> <i class="fa fa-calendar"></i> </div>
+            <!--//icon-->
+            <div class="content">
+              <h3 class="title">No More Aimless Driving</h3>
+              <p>With all your itineraries planned out and scheduled, you will spend more time doing meaningful activities and spend less time wondering!</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
+            <div class="icon" icons-animate> <i class="fa fa-comments"></i> </div>
+            <!--//icon-->
+            <div class="content">
+              <h3 class="title">Customer Support</h3>
+              <p>We provide 24/7 customer support to cater to all your needs. So fred not, we got your back.</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
+            <div class="icon" icons-animate> <i class="fa fa-globe"></i> </div>
+            <!--//icon-->
+            <div class="content">
+              <h3 class="title">Always Updated</h3>
+              <p>DatEasy is always up to date with the latest craze and trends that hit the dating scene! So be prepared for fresh new experiences with just a click away!</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//about-->
+
+
+    <!-- ******SERVICES****** -->
+    <section id="services" class="services section has-pattern">
+      <div class="container">
+        <div class="row">
+          <!--<div class="content col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6 text-center">-->
+          <div class="content col-md-12 col-sm-12 col-xs-12 text-center">
+            <h2 class="title">Services</h2>
+            <ul class="services_ul">
+              <li>
+                <div class="icon animated fadeInUp delayp1" icons-animate="" style="opacity: 0"> <i class="fa fa-calendar"></i> </div>
+                <div class="text_box left_text_box">
+                  <div class="text_area">
+                    <span>Selecting occassion</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="icon animated fadeInUp delayp1" icons-animate="" style="opacity: 0"> <i class="fa fa-dollar"></i> </div>
+                <div class="text_box right_text_box">
+                  <div class="text_area">
+                    <span>Select your budget and preference</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="icon animated fadeInUp delayp1" icons-animate="" style="opacity: 0"> <i class="fa fa-plus"></i> </div>
+                <div class="text_box left_text_box">
+                  <div class="text_area">
+                    <span>Select any add ons</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="icon animated fadeInUp delayp1" icons-animate="" style="opacity: 0"> <i class="fa fa-heart"></i> </div>
+                <div class="text_box right_text_box">
+                  <div class="text_area">
+                    <span>And dateasy will take care of the rest! </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--//content-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//services-->
+
+    <!-- ******PRODUCTS****** -->
+    <section id="products" class="products section has-pattern">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="title">Our Products</h2>
+          <div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--//products-->
+
+    <!-- ******CONTACT****** -->
+    <!--<section id="contact" class="contact section has-pattern">-->
+    <section id="contact"
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="title">CONTACT US</h2>
+          <div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+            <p>If you like our creations, leave us a message at <a href="mailto:owner@thotherbakery.com">owner@theotherbakery.com</a> 
+              for any orders, enquries, or events.
+              <br>Leave your email too so we can contact you once our site is live!</p>
+            <ul class="list-unstyled contact-details">
+              <li><i class="fa fa-envelope"></i><a href="mailto:info@theotherbakery.com">info@theotherbakery.com</a></li>
+              <li><i class="fa fa-phone-square"></i>+65 9637 0022</li>
+            </ul>
+          </div>
+        </div>
+        <!--//row-->
+        <div class="row text-center">
+          <div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+            <form class="form" name="form" ng-submit="addFeedback(form)" novalidate id="contact-form">
+              <!--
+              <div class="form-group name">
+                <label class="sr-only" for="name">Name</label>
+                <input id="name" type="text" ng-model="feedback.name" name="contactName" class="form-control" placeholder="Name:" required>
+                <p ng-show="form.contactName.$error.required && submitted">Please enter your name</p>
+              </div>&lt;!&ndash;//form-group&ndash;&gt;
+              -->
+              <div class="form-group email">
+                <label class="sr-only" for="email">Email</label>
+                <input id="email" type="email" ng-model="feedback.email" name="email" class="form-control" placeholder="Email:" required> </div>
+              <!--//form-group-->
+              <p ng-show="form.email.$error.required && submitted">Please enter your E-Mail address</p>
+              <p class="error" ng-show="form.email.$error.email">Not valid email!</p>
+              <p ng-show="form.comments.$error.required && submitted">Please enter your feedback</p>
+              <p ng-if="showSuccess" class="alert alert-success">Successfully Submitted</p>
+              <button type="submit" class="btn btn-lg btn-theme">Send Email</button>
+            </form>
+            <!--//form-->
+          </div>
+          <!--//contact-form-->
+        </div>
+        <!--//row-->
+        <div class="text-center">
+          <ul class="social-icons list-inline" ng-controller="LoginCtrl">
+            <li><a href="#" ng-click="oauthLogin('facebook')"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+          <!--//social-icons-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//contact-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+            (A[l].q = A[l].q || []).push(arguments)
+          }, A[l].l = +new Date, a = n.createElement(g),
+          r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+      }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-60476073-3');
+      ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.8907f769.js"></script>
+    <![endif]-->
+    <script src="scripts/vendor.75200232.js"></script>
+    <script src="scripts/scripts.59fd139f.js"></script>
+    <script src="scripts/jquery.mb.YTPlayer.js"></script>
